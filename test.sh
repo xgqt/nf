@@ -23,7 +23,7 @@ Ran:
 
 "
 
-if shellcheck -e SC2244 -e SC2243 nf || exit 1
+if shellcheck -e SC1117,SC2243,SC2244 nf || exit 1
 then
     message+="Passed the shellcheck test"
 else
@@ -32,7 +32,7 @@ else
 fi
 message+="
 Ran:
-     shellcheck -e SC2244 -e SC2243 nf
+     shellcheck -e SC1117,SC2243,SC2244 nf
 
 "
 
@@ -59,5 +59,5 @@ else
     echo "Tests failed"
 fi
 echo "------------------------------"
-    
+
 exit ${result}
