@@ -14,8 +14,10 @@ INSTMAN	= $(INSTDIR)/share/man/man1
 all:
 	echo "Run 'make install' to install nf"
 
+
 test:
 	bash test.sh
+
 
 install:
 	test -d $(INSTDIR) || mkdir -p $(INSTDIR)
