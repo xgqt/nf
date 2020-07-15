@@ -1,0 +1,16 @@
+image: debian:stable-slim
+
+stages:
+  - dev
+
+before_script:
+  - apt-get update
+  - apt-get install -y bash make shellcheck
+
+test:
+  stage: dev
+  script:
+    - make test
+    - make install
+    - nf --travis -v
+    - make uninstall 

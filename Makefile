@@ -8,12 +8,14 @@ INSTBIN	= $(INSTDIR)/bin
 INSTMAN	= $(INSTDIR)/share/man/man1
 
 
-.PHONY: all install uninstall
+.PHONY: all test install uninstall
 
 
 all:
 	echo "Run 'make install' to install nf"
 
+test:
+	bash test.sh
 
 install:
 	test -d $(INSTDIR) || mkdir -p $(INSTDIR)
