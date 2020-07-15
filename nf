@@ -1749,7 +1749,7 @@ get_de() {
         de_ver=${de_ver/tde-config*}
         de_ver=${de_ver/liblxqt*}
         de_ver=${de_ver/Copyright*}
-        de_ver=${de_ver/)*}
+        de_ver=${de_ver/\)*}
         de_ver=${de_ver/* }
         de_ver=${de_ver//\"}
 
