@@ -12,5 +12,5 @@ test:
   script:
     - make test
     - make install
-    - nf --travis -v
+    - nf
     - make uninstall 
