@@ -4,7 +4,7 @@
 # shellcheck disable=2009
 #
 # Neofetch: A command-line system information tool written in bash 3.2+.
-# https://github.com/dylanaraps/neofetch
+# https://gitlab.com/xgqt/nf
 #
 # The MIT License (MIT)
 #
@@ -50,8 +50,6 @@ export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
 
 # Neofetch default config.
 read -rd '' config <<'EOF'
-# See this wiki page for more info:
-# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
     info title
     info underline
@@ -846,8 +844,6 @@ thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch"
 # Values:   'normal', 'fit', 'fill'
 # Flag:     --crop_mode
 #
-# See this wiki page to learn about the fit and fill options.
-# https://github.com/dylanaraps/neofetch/wiki/What-is-Waifu-Crop%3F
 crop_mode="normal"
 
 # Crop offset
@@ -3806,7 +3802,7 @@ image_backend() {
 
             ((term_width < 1)) && {
                 to_ascii "Image: Failed to find terminal window size."
-                err "Image: Check the 'Images in the terminal' wiki page for more info,"
+                err "Image: Check the 'Images in the terminal' for more info,"
                 return
             }
 
@@ -4956,7 +4952,7 @@ DEVELOPER:
     --gen-man                   Generate a manpage for Neofetch in your PWD. (Requires GNU help2man)
 
 
-Report bugs to https://github.com/dylanaraps/neofetch/issues
+Report bugs to https://gitlab.com/xgqt/nf
 
 "
 exit 1
