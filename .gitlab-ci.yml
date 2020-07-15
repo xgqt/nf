@@ -3,8 +3,6 @@ image: alpine:3
 stages:
   - test
   - install
-  - run
-  - uninstall
 
 before_script:
   - apk update
@@ -19,13 +17,5 @@ install:
   stage: install
   script:
     - make install
-
-run:
-  stage: run
-  script:
     - nf
-
-uninstall:
-  stage: uninstall
-  script:
-    - make uninstall 
+    - make uninstall
