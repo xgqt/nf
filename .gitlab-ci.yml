@@ -1,11 +1,11 @@
-image: debian:stable-slim
+image: alpine:3
 
 stages:
   - dev
 
 before_script:
-  - apt-get update
-  - apt-get install -y bash make shellcheck
+  - apk update
+  - apk add bash make shellcheck
 
 test:
   stage: dev
