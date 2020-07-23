@@ -1,7 +1,12 @@
 <p align="center">A command-line system information tool written in bash 3.2+</p>
 
 <p align="center">
-    <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+    <a href="https://gitlab.com/xgqt/nf/pipelines">
+        <img src="https://gitlab.com/xgqt/nf/badges/master/pipeline.svg">
+    </a>
+    <a href="./LICENSE.md">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+    </a>
 </p>
 
 
