@@ -6,6 +6,9 @@
     <a href="https://gitlab.com/xgqt/nf/pipelines">
         <img src="https://gitlab.com/xgqt/nf/badges/master/pipeline.svg">
     </a>
+    <a href="https://gitlab.com/xgqt/nf/commits/master.atom">
+        <img src="https://img.shields.io/badge/feed-atom-orange.svg">
+    </a>
     <a href="./LICENSE.md">
         <img src="https://img.shields.io/badge/license-MIT-blue.svg">
     </a>
