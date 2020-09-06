@@ -1,3 +1,5 @@
+# NF
+
 <p align="center">A command-line system information tool written in bash 3.2+</p>
 
 <p align="center">
@@ -9,10 +11,12 @@
     </a>
 </p>
 
-
 <b>nf</b> was forked from https://github.com/dylanaraps/neofetch
 
- <b>nf</b> is a command-line system information tool written in `bash 3.2+`. <b>nf</b> displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.
+
+# About
+
+<b>nf</b> is a command-line system information tool written in `bash 3.2+`. <b>nf</b> displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.
 
 The overall purpose of <b>nf</b> is to be used in screen-shots of your system. <b>nf</b> shows the information other people want to see. There are other tools available for proper system statistic/diagnostics.
 
@@ -21,3 +25,28 @@ The information by default is displayed alongside your operating system's logo. 
 You can further configure <b>nf</b> to display exactly what you want it to. Through the use of command-line flags and the configuration file you can change existing information outputs or add your own custom ones.
 
 <b>nf</b> supports almost 150 different operating systems. From Linux to Windows, all the way to more obscure operating systems like Minix, AIX and Haiku. If your favourite operating system is unsupported: Open up an issue and support will be added.
+
+
+# Installation
+
+# Git
+
+As user:
+
+```sh
+git clone --recursive --verbose https://gitlab.com/xgqt/nf
+cd nf
+make install
+```
+
+
+# Gentoo
+
+As root:
+
+```sh
+emerge -1nv app-eselect/eselect-repository
+eselect repository enable myov
+emaint sync -r myov
+emerge -av --autounmask app-misc/nf
+```
